@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Karen Country Club Survey Form</h1>
+    <p id="description">Fill in the form below with correct information as best as you can </p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name" id="name-label">NAME: <input required type="text" id="name" placeholder="Enter Your Name"></input></label>
+      <label for="email" id="email-label">EMAIL: <input type="email" required id="email" placeholder="Enter Your Email"></input></label>
+      <label for="number" id="number-label">NUMBER: <input type="number" id="number" min="18" max="120" placeholder="Enter Your Age"></input></label>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown"> How would you rate us? </label>
+      <select id="dropdown" class="dropdown"> 
+        <option value="ratings">(Rate us below)</option>
+        <option value="1-rate">1-star</option>
+        <option value="2-rate">2-star</option>
+        <option value="3-rate">3-star</option>
+        <option value="4-rate">4-star</option>
+        <option value="5-rate">5-star</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label>Would you recommend us to your friends? </label>
+      <label for="yes"><input type="radio" name="recommend" id="yes" value="yes" class="inline"> yes</input></label>
+      <label for="no"><input type="radio" name="recommend" id="no" value="no" class="inline"> no</input></label>
+      </fieldset>
+      <fieldset>
+      <label>  Which part(s) of the club did you enjoy most</label>
+        <label for="sports">  
+          <input type="checkbox" id="sports" value="sports-area" class="inline"></input> Sports Area
+        </label>
+        <label for="lounge"> 
+          <input type="checkbox" id="lounge" value="lounge-area" class="inline"></input> Lounge Area
+        </label>
+        <label for="restaurant"> 
+            <input type="checkbox" id="restaurant" value="restaurant-area" class="inline"></input> Restaurant Area
+        </label>
+        <label for="cinema"> 
+            <input type="checkbox" id="cinema" value="cinema-area" class="inline"></input> Cinema Area
+        </label>
+        <label for="pool"> 
+            <input type="checkbox" id="pool" value="pool-area" class="inline"></input> Pool Area
+        </label>
+      </fieldset>
+      <fieldset>
+      <label for="suggestions"> Any suggestions:
+          <textarea id="suggestions" name="any-suggestions" rows="6" cols="10" >help us improve our services to suit your needs</textarea>
+      </label>
+      </fieldset>
+      <label>
+        <input id="submit" type="submit" value="submit"></input>
+      </label>
+    </form>
+</body>
+</html>
